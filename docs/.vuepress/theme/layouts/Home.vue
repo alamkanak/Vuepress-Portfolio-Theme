@@ -19,6 +19,13 @@
                         <b-form-group label="" class="text-center">
                             <b-form-radio-group id="btn-radios-1" button-variant="outline-dark" v-model="selected" :options="tags" buttons name="radios-btn-default"></b-form-radio-group>
                         </b-form-group>
+
+                        <isotope ref='cpt' :list="portfolioItems" :options='isotopeOptions()'>
+                            <div v-for="element in portfolioItems" :key="element.path">
+                                {{element.title}}
+                            </div>
+                        </isotope>
+
                     </b-col>
                 </b-row>
             </b-container>
@@ -28,11 +35,39 @@
 
 
 <script>
+import isotope from 'vueisotope'
 export default {
+    components: { isotope },
     data: function () {
         return {
-            selected: "r1"
+            selected: "*",
+            isotopeOptions: function() {
+                let _this = this;
+                return {
+                    getFilterData: {
+                        filterByTag(itemElem) {
+                            if (_this.selected == "*") {
+                                return true;
+                            }
+                            var tags = itemElem.frontmatter.tags;
+                            if (tags.length > 0) {
+                                var res = tags.map((el) => {
+                                        return _.snakeCase(el);
+                                    }).includes(_this.selected);
+                                console.log(_this.selected + ' ' + res);
+                                return res;
+                            }
+                            return false;
+                        },
+                    }
+                };
+            },
         };
+    },
+    watch: {
+        selected: function (val) {
+            this.$refs.cpt.filter('filterByTag');
+        },
     },
     computed: {
         layout() {
@@ -44,21 +79,24 @@ export default {
             }
             return "NotFound";
         },
+        portfolioItems() {
+            return this.$site.pages.filter((page) => {
+                return page.path.indexOf("/project/") >= 0;
+            });
+        },
         tags() {
-            var tags = this.$site.pages.filter(page => {
-                return page.path.indexOf('/project/') >= 0;
-            })
-            .map(item => {
-                return item.frontmatter.tags
-            })
-            .reduce(function(pre,cur) {
-                return pre.concat(cur);
+            var tags = this.portfolioItems
+                .map((item) => {
+                    return item.frontmatter.tags;
+                })
+                .reduce(function (pre, cur) {
+                    return pre.concat(cur);
+                });
+            tags = _.uniq(tags).map((item) => {
+                return { text: item, value: _.snakeCase(item) };
             });
-            tags = _.uniq(tags).map(item => {
-                return {text: item, value: _.snakeCase(item)};
-            });
-            tags.unshift({text: 'All', value: 'all'});
-            this.selected = tags[0]['value'];
+            tags.unshift({ text: "All", value: "*" });
+            this.selected = tags[0]["value"];
             return tags;
         }
     },
