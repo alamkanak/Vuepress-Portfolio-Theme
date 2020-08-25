@@ -1,0 +1,21 @@
+{
+  "name": "Raquibul",
+  "version": "0.0.1",
+  "description": "Porfolio of Raquib-ul Alam",
+  "main": "index.js",
+  "authors": {
+    "name": "Raquib-ul Alam",
+    "email": "alam.kanak@gmail.com"
+  },
+  "repository": "https://github.com/alamkanak/alamkanak.github.io",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
