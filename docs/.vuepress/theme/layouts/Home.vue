@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col class="text-center my-5">
-                    <b-alert show class="mb-5">This site is under construction</b-alert>
+                    <b-alert show class="mb-5">This site is currently under construction</b-alert>
                     <img :src="$page.frontmatter.avatar" alt="avatar" class="avatar mb-5">
                     <h2 class="mb-4 display-4"><span class="text-muted">Hi! I'm</span> {{ $page.frontmatter.title}}</h2>
                     <div class="lead">

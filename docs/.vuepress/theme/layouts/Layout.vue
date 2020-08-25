@@ -1,6 +1,7 @@
 <template>
     <div class="theme-container portfolio-item-layout">
         <div class="container py-5">
+            <b-breadcrumb :items="[{'text': 'Home', 'href': $site.base}, {'text': $page.title, active: true}]"></b-breadcrumb>
             <h1 class="display-4">{{ $page.title }}</h1>
             <p class="lead">{{ $page.frontmatter.description }}</p>
             <div>
