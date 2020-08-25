@@ -33,17 +33,12 @@
         flex-wrap wrap
         justify-content center
 
-    .projects-enter 
+    .projects-leave-to, .projects-enter
         transform scale(0.7) translateY(-80px)
-        opacity 0
-
-    .projects-leave-to
-        transform translateY(30px)
         opacity 0
 
     .projects-leave-active 
         position absolute
-        z-index -1
     
     .project 
         transition all .35s ease-in-out
