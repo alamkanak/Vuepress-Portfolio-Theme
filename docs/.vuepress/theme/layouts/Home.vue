@@ -16,16 +16,18 @@
                 <b-row>
                     <b-col class="my-5">
                         <h1 class="mb-4 text-center">Projects</h1>
-                        <b-form-group label="" class="text-center">
-                            <b-form-radio-group id="btn-radios-1" button-variant="outline-dark" v-model="selected" :options="tags" buttons name="radios-btn-default"></b-form-radio-group>
+                        <b-form-group label="" class="text-center mb-5">
+                            <b-form-radio-group id="btn-radios-1" button-variant="outline-dark" v-model="selectedTag" :options="tags" buttons name="radios-btn-default"></b-form-radio-group>
                         </b-form-group>
 
-                        <isotope ref='cpt' :list="portfolioItems" :options='isotopeOptions()'>
-                            <div class="gutter-sizer"></div>
-                            <div v-for="element in portfolioItems" :key="element.path" class="portfolio-item">
-                                {{element.title}}
-                            </div>
-                        </isotope>
+                        <transition-group class="projects" name="projects">
+                            <a class="project position-relative" v-if="shouldShowProject(project)" :href="project.path" v-for="project in projects" :key="project.path">
+                                <img :src="project.frontmatter.thumbnail" alt="">
+                                <p class="lead px-3 pt-3 mb-0 font-weight-normal"><v-clamp autoresize :max-lines="1">{{project.title}}</v-clamp></p>
+                                <p class="px-3 text-muted"><v-clamp autoresize :max-lines="2">Manage and track TV shows Manage and track TV shows Manage and track TV shows</v-clamp></p>
+                                <div class="position-absolute overlay"></div>
+                            </a>
+                        </transition-group>
 
                     </b-col>
                 </b-row>
@@ -36,47 +38,14 @@
 
 
 <script>
-import isotope from "vueisotope";
+import _ from 'lodash';
+import VClamp from 'vue-clamp';
 export default {
-    components: { isotope },
+    components: {VClamp},
     data: function () {
         return {
-            selected: "*",
-            isotopeOptions: function () {
-                let _this = this;
-                return {
-                    layoutMode: "fitRows",
-                    itemSelector: '.portfolio-item',
-                    percentPosition: true,
-                    fitRows: {
-                        gutter: ".gutter-sizer",
-                    },
-                    getFilterData: {
-                        filterByTag(itemElem) {
-                            if (_this.selected == "*") {
-                                return true;
-                            }
-                            var tags = itemElem.frontmatter.tags;
-                            if (tags.length > 0) {
-                                var res = tags
-                                    .map((el) => {
-                                        return _.snakeCase(el);
-                                    })
-                                    .includes(_this.selected);
-                                console.log(_this.selected + " " + res);
-                                return res;
-                            }
-                            return false;
-                        },
-                    },
-                };
-            },
+            selectedTag: "*",
         };
-    },
-    watch: {
-        selected: function (val) {
-            this.$refs.cpt.filter("filterByTag");
-        },
     },
     computed: {
         layout() {
@@ -88,13 +57,13 @@ export default {
             }
             return "NotFound";
         },
-        portfolioItems() {
+        projects() {
             return this.$site.pages.filter((page) => {
                 return page.path.indexOf("/project/") >= 0;
             });
         },
         tags() {
-            var tags = this.portfolioItems
+            var tags = this.projects
                 .map((item) => {
                     return item.frontmatter.tags;
                 })
@@ -107,7 +76,22 @@ export default {
             tags.unshift({ text: "All", value: "*" });
             this.selected = tags[0]["value"];
             return tags;
-        },
+        }
     },
+    methods: {
+        shouldShowProject(project) {
+            if (this.selectedTag == "*") {
+                return true;
+            }
+            var tags = project.frontmatter.tags;
+            if (tags.length > 0) {
+                return tags.map((el) => {
+                        return _.snakeCase(el);
+                    })
+                    .includes(this.selectedTag);
+            }
+            return false;
+        }
+    }
 };
 </script>

@@ -7,11 +7,54 @@
         height 200px
         border-radius 50%
 
-    .portfolio-item
-        width 22%
-        height 100px
-        background-color #fff
-        float left
+    .projects
+        display grid
+        grid-template-columns repeat(1, 1fr)
+        grid-gap 0px
 
-    .gutter-sizer
-        width 4%
+        @media screen and (min-width: 768px)
+            grid-template-columns repeat(2, 1fr)
+            grid-gap 30px
+
+        @media screen and (min-width: 992px)
+            grid-template-columns repeat(4, 1fr)
+            grid-gap 30px
+
+    .project
+        background-color #ffffff
+        transition all 0.3s
+        border 1px solid #ccc
+        color #000
+        text-decoration none
+
+        img 
+            width: 100%
+
+    .project:hover, .project:focus 
+        color #000
+        text-decoration none
+        border 1px solid #ccc
+
+    .project:hover .overlay 
+        opacity 0.3
+    
+    .projects-enter, .projects-leave-to
+        opacity 0
+        transform translateY(30px)
+    
+    .projects-leave-active
+        position absolute
+
+    .overlay 
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: #008CBA;
+    
+
+    

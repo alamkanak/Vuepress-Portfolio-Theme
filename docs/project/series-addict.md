@@ -1,5 +1,6 @@
 ---
 title: Series Addict
 lang: en-US
-tags: ['Android Engineering', 'UX Design']
+tags: ['UX Design']
+thumbnail: ./series-addict-thumb.png
 ---
