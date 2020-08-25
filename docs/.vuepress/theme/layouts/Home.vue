@@ -21,7 +21,8 @@
                         </b-form-group>
 
                         <isotope ref='cpt' :list="portfolioItems" :options='isotopeOptions()'>
-                            <div v-for="element in portfolioItems" :key="element.path">
+                            <div class="gutter-sizer"></div>
+                            <div v-for="element in portfolioItems" :key="element.path" class="portfolio-item">
                                 {{element.title}}
                             </div>
                         </isotope>
@@ -35,15 +36,21 @@
 
 
 <script>
-import isotope from 'vueisotope'
+import isotope from "vueisotope";
 export default {
     components: { isotope },
     data: function () {
         return {
             selected: "*",
-            isotopeOptions: function() {
+            isotopeOptions: function () {
                 let _this = this;
                 return {
+                    layoutMode: "fitRows",
+                    itemSelector: '.portfolio-item',
+                    percentPosition: true,
+                    fitRows: {
+                        gutter: ".gutter-sizer",
+                    },
                     getFilterData: {
                         filterByTag(itemElem) {
                             if (_this.selected == "*") {
@@ -51,22 +58,24 @@ export default {
                             }
                             var tags = itemElem.frontmatter.tags;
                             if (tags.length > 0) {
-                                var res = tags.map((el) => {
+                                var res = tags
+                                    .map((el) => {
                                         return _.snakeCase(el);
-                                    }).includes(_this.selected);
-                                console.log(_this.selected + ' ' + res);
+                                    })
+                                    .includes(_this.selected);
+                                console.log(_this.selected + " " + res);
                                 return res;
                             }
                             return false;
                         },
-                    }
+                    },
                 };
             },
         };
     },
     watch: {
         selected: function (val) {
-            this.$refs.cpt.filter('filterByTag');
+            this.$refs.cpt.filter("filterByTag");
         },
     },
     computed: {
@@ -98,7 +107,7 @@ export default {
             tags.unshift({ text: "All", value: "*" });
             this.selected = tags[0]["value"];
             return tags;
-        }
+        },
     },
 };
 </script>
