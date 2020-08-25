@@ -19,6 +19,9 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0"
   }
