@@ -1,6 +1,26 @@
 .bg-light
     background-color #f1f1f1 !important
 
+.clamp-1
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+
+.clamp-2
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+
 .home-layout
     .avatar 
         width 200px
@@ -22,11 +42,13 @@
 
     .project
         background-color #ffffff
-        transition all 0.3s
         border 1px solid #ccc
         color #000
         text-decoration none
+        height 397px
 
+        backface-visibility hidden
+        z-index 1
         img 
             width: 100%
 
@@ -38,12 +60,62 @@
     .project:hover .overlay 
         opacity 0.3
     
-    .projects-enter, .projects-leave-to
-        opacity 0
-        transform translateY(30px)
+    // ----------
+
+    /* moving */
+    .project-move 
+        transition: all 600ms ease-in-out 50ms;    
+
+    /* appearing */
+    .project-enter-active 
+        transition: all 400ms ease-out;    
+
+    /* disappearing */
+    .project-leave-active 
+        transition: all 200ms ease-in;
+        position: absolute;
+        z-index: 0;
+
+    /* appear at / disappear to */
+    .project-enter,
+    .project-leave-to 
+        opacity: 0;    
+
+    // ---------
+
+
+    // .proejcts-complete-enter, .proejcts-complete-leave-to
+    //     opacity 0
+    //     transform translateY(30px)
+
+    // .proejcts-complete-leave-active 
+    //     position absolute
+
+    // .projects-enter-active, .projects-leave-active 
+    //     transition: all 0.3s
     
-    .projects-leave-active
-        position absolute
+    // .projects-enter, .projects-leave-to 
+    //     opacity: 0
+    //     transform: translateY(30px)
+    
+    // .projects-move 
+    //     transition transform 0.3s
+
+    // .projects-enter, .projects-leave-to
+    //     opacity 0
+    //     transform translateY(30px)
+    
+    // .projects-leave-active
+    //     position absolute
+
+    // .list-enter-active, .list-leave-active 
+    //     transition: all 0.3s
+
+    // .projects-move 
+    //     transition transform 0.3s
+
+
+
 
     .overlay 
         top: 0;

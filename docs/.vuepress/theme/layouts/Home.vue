@@ -24,7 +24,10 @@
                             <a class="project position-relative" v-if="shouldShowProject(project)" :href="project.path" v-for="project in projects" :key="project.path">
                                 <img :src="project.frontmatter.thumbnail" alt="">
                                 <p class="lead px-3 pt-3 mb-0 font-weight-normal"><v-clamp autoresize :max-lines="1">{{project.title}}</v-clamp></p>
-                                <p class="px-3 text-muted"><v-clamp autoresize :max-lines="2">Manage and track TV shows Manage and track TV shows Manage and track TV shows</v-clamp></p>
+                                <p class="px-3 text-muted mb-2 clamp-2">Manage and track TV shows Manage and track TV shows Manage and track TV shows</p>
+                                <div class="mx-3 mb-3 clamp-1">
+                                    <b-badge variant="light bg-light font-weight-normal" class="mr-1" v-for="tag in project.frontmatter.tags" :key="tag">{{ tag }}</b-badge>
+                                </div>
                                 <div class="position-absolute overlay"></div>
                             </a>
                         </transition-group>
@@ -39,9 +42,7 @@
 
 <script>
 import _ from 'lodash';
-import VClamp from 'vue-clamp';
 export default {
-    components: {VClamp},
     data: function () {
         return {
             selectedTag: "*",
