@@ -28,51 +28,56 @@
         border-radius 50%
 
     .projects 
-        margin-bottom:50px;
-        margin-top:25px;
-        margin-right: 1rem;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-    
+        margin-right 1.5rem
+        display flex
+        flex-wrap wrap
+        justify-content center
 
     .projects-enter 
-        transform: scale(0.5) translatey(-80px);
-        opacity:0;
-    
+        transform scale(0.7) translateY(-80px)
+        opacity 0
 
     .projects-leave-to
-        transform: translatey(30px);
-        opacity:0;
-    
+        transform translateY(30px)
+        opacity 0
 
     .projects-leave-active 
-        position: absolute;
-        z-index:-1;
-    
+        position absolute
+        z-index -1
     
     .project 
-        transition: all .2s ease-in-out;
-        margin-left:1rem;
-        box-shadow:0px 2px 8px lightgrey;
-        border-radius:3px;
-        width:calc(100% / 3 - 1rem);
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        background-color: #fff;
-        margin-bottom: 1rem;
+        transition all .35s ease-in-out
+        margin-left 1.5rem
+        box-shadow 0px 2px 8px lightgrey
+        border-radius 5px
+        width calc(100% - 1.5rem)
+        display flex
+        flex-direction column
+        align-items center
+        background-color #fff
+        margin-bottom 1.5rem
         color #000
         text-decoration none
-        border 1px solid #bbb
+
+        @media screen and (min-width: 768px)
+            width calc(100% / 2 - 1.5rem)
+
+        @media screen and (min-width: 992px)
+            width calc(100% / 3 - 1.5rem)
+
         img 
-            width: 100%;
-            transition: all .2s ease-in-out;
+            border-radius 5px 5px 0 0
+            width 100%
+            transition all .35s ease-in-out
+
+        .desc
+            @media screen and (min-width: 768px)
+                height 48px
         
     .project:hover, .project:focus 
         color #000
         text-decoration none
-        background-color: #eee
+        background-color #eee
         img 
             opacity 0.7
     
