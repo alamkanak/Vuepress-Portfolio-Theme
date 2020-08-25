@@ -1,12 +1,12 @@
 <template>
-    <div id="global-layout">
-        In globallayout.vue
+    <div id="global-layout">    
+        <component :is="layout" />    
+        <!-- <b-alert show>Default Alert</b-alert>
         <header>
             <h1>Header</h1>
-        </header>
-        <component :is="layout" />
-        <footer>
-            <h1>Footer</h1>
+        </header> -->
+        <footer class="text-center my-5">
+            Made with ❤️ by Raquib-ul Alam
         </footer>
     </div>
 </template>

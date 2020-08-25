@@ -1,5 +1,5 @@
 ---
-title: Series Addict
+title: ForexAchievers
 lang: en-US
 tags: ['Android Engineering', 'UX Design']
 ---
