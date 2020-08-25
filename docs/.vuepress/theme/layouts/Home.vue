@@ -23,9 +23,9 @@
                         <transition-group class="projects" name="projects">
                             <a class="project" v-if="shouldShowProject(project)" :href="project.path" v-for="project in projects" :key="project.path">
                                 <img :src="project.frontmatter.thumbnail" alt="">
-                                <p class="lead px-3 pt-3 mb-0 font-weight-normal"><v-clamp autoresize :max-lines="1">{{project.title}}</v-clamp></p>
+                                <p class="lead px-3 pt-3 mb-1 font-weight-normal"><v-clamp autoresize :max-lines="1">{{project.title}}</v-clamp></p>
                                 <p class="px-3 text-muted mb-2 clamp-2">Manage and track TV shows Manage and track TV shows Manage and track TV shows</p>
-                                <div class="mx-3 mb-3 clamp-1">
+                                <div class="mx-3 mb-3 clamp-1 text-center">
                                     <b-badge variant="light bg-light font-weight-normal" class="mr-1" v-for="tag in project.frontmatter.tags" :key="tag">{{ tag }}</b-badge>
                                 </div>
                                 <!-- <div class="position-absolute overlay"></div> -->
