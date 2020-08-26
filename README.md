@@ -1,6 +1,8 @@
 # ViewPress Portfolio Theme
 This is a viewpress theme, populated with sample portfolio items. The theme currently supports the plugins: [medium-zoom](https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html), [google-analytics](https://vuepress.vuejs.org/plugin/official/plugin-google-analytics.html) and [custom-container](https://vuepress.vuejs.org/guide/markdown.html#custom-containers). The theme is also customizable (see below).
 
+[View demo](https://alamkanak.github.io)
+
 ## Setup
 1. Clone the repo.
 2. Open terminal in the root directory and run
