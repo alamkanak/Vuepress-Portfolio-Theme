@@ -9,6 +9,17 @@
                     <div class="lead">
                         <Content />
                     </div>
+
+                    <div v-if="typeof $site.themeConfig.social !== 'undefined'" class="mt-5">
+                        <h4 class="mb-4">Contact Me</h4>
+                        <ul class="mb-4 social">
+                            <li v-for="link in $site.themeConfig.social" :key="link.url" class="mx-3">
+                                <a :href="link.url" target="_blank">
+                                    <font-awesome-icon :icon="link.icon" size="3x" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </b-col>
             </b-row>
         </b-container>
@@ -41,7 +52,7 @@
 
 
 <script>
-import _ from 'lodash';
+import _ from "lodash";
 export default {
     data: function () {
         return {
@@ -77,7 +88,7 @@ export default {
             tags.unshift({ text: "All", value: "*" });
             this.selected = tags[0]["value"];
             return tags;
-        }
+        },
     },
     methods: {
         shouldShowProject(project) {
@@ -86,13 +97,14 @@ export default {
             }
             var tags = project.frontmatter.tags;
             if (tags.length > 0) {
-                return tags.map((el) => {
+                return tags
+                    .map((el) => {
                         return _.snakeCase(el);
                     })
                     .includes(this.selectedTag);
             }
             return false;
-        }
-    }
+        },
+    },
 };
 </script>

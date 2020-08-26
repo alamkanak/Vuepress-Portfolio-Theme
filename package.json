@@ -17,7 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.5.4",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-container": "^2.1.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
