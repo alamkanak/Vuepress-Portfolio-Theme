@@ -35,3 +35,4 @@ git push -f https://github.com/alamkanak/alamkanak.github.io.git master
 
 cd ..
 rm -r gitpush
+chown -R alam: node_modules

@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.4",
     "@vuepress/plugin-medium-zoom": "^1.5.4",
     "vuepress": "^1.5.3",
     "vuepress-plugin-container": "^2.1.4"
@@ -27,6 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "bootstrap": "^4.5.2",
-    "bootstrap-vue": "^2.16.0"
+    "bootstrap-vue": "^2.16.0",
+    "dotenv": "^8.2.0"
   }
 }

@@ -4,9 +4,10 @@ lang: en-US
 tags: ['Android Engineering', 'UX Design']
 thumbnail: ./series-addict-thumb.png
 description: An android library to render calendars (week view or day view).
-links: [{'url': 'https://github.com/alamkanak/Android-Week-View', 'text': 'View on Github', 'icon': ['fab', 'github']}]
+links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
 skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
 tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']
+info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}]
 ---
 ![An image](/android-week-view.png)
 

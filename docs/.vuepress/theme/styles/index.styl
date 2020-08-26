@@ -1,10 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto%20Slab&display=swap');
+primary-color-500 = #42b983
+primary-color-600 = #0e8c53
+text-color = #485058
+gray-color-600 = #e1e2e2
+gray-color-500 = #f3f5f7
+gray-color-400 = #cecece
 
-html, body
-    font-family: 'Roboto Slab'
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+html, body, .badge-light
+    font-family: 'Open Sans'
+    color: text-color
+
+a
+    color: primary-color-500
+
+a:hover
+    color: primary-color-600
+
+.btn-theme 
+    color: #fff;
+    background-color: primary-color-500;
+    border-color: primary-color-500;
+
+.btn-theme:hover
+    color: #fff;
+    background-color: primary-color-600;
+    border-color: primary-color-600;
 
 .bg-light
-    background-color #f1f1f1 !important
+    background-color gray-color-500 !important
+
+.badge-light
+    background-color: gray-color-500
+
+.breadcrumb
+    background-color: gray-color-500
+
+.separator
+    width: 100%
+    height 1px
+    background-color: gray-color-600
 
 .clamp-1
     display: -webkit-box;
@@ -32,13 +67,13 @@ html, body
         list-style: none
         display: inline-block
         a
-            color: #808080
+            color: text-color
         a:hover
-            color: #0056b3
+            color: primary-color-600
 
 .tip
-    background-color: #dcdfe2
-    border-color: #42b983
+    background-color: gray-color-500
+    border-color: primary-color-500
     padding: .1rem 1.5rem
     border-left-width: .5rem
     border-left-style: solid
@@ -81,7 +116,7 @@ html, body
         align-items center
         background-color #fff
         margin-bottom 1.5rem
-        color #000
+        color text-color
         text-decoration none
 
         @media screen and (min-width: 768px)
@@ -100,14 +135,19 @@ html, body
                 height 48px
         
     .project:hover, .project:focus 
-        color #000
+        color text-color
         text-decoration none
-        background-color #eee
+        background-color gray-color-400
         img 
             opacity 0.7
     
 
 .portfolio-item-layout
+    .skill-title
+        font-weight: 700
+        font-size: 14px
+        text-transform: uppercase
+
     .skills ul 
         padding: 0
         li 
