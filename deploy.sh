@@ -34,4 +34,4 @@ git push -f https://github.com/alamkanak/alamkanak.github.io.git master
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 cd ..
-sudo rm -r gitpush
+rm -r gitpush

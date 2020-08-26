@@ -10,5 +10,5 @@ npm run docs:dev
 
 # Deploy
 ```
-sh deploy.sh
+sudo sh deploy.sh
 ```
