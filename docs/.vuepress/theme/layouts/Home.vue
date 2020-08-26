@@ -4,7 +4,7 @@
             <b-row>
                 <b-col class="text-center my-5">
                     <b-alert show class="mb-5">This site is currently under construction</b-alert>
-                    <img :src="$page.frontmatter.avatar" alt="avatar" class="avatar mb-5">
+                    <img :src="$page.frontmatter.avatar" alt="avatar" class="avatar mb-5 medium-zoom">
                     <h2 class="mb-4 display-4">Hi! I'm {{ $page.frontmatter.title}}</h2>
                     <div class="lead">
                         <Content />
@@ -27,7 +27,7 @@
             <b-container>
                 <b-row>
                     <b-col class="my-5">
-                        <h1 class="mb-4 text-center">Projects</h1>
+                        <h1 class="mb-4 text-center">Noteworthy Projects</h1>
                         <b-form-group label="" class="text-center mb-5">
                             <b-form-radio-group id="btn-radios-1" button-variant="outline-secondary" v-model="selectedTag" :options="tags" buttons name="radios-btn-default"></b-form-radio-group>
                         </b-form-group>

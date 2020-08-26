@@ -1,7 +1,7 @@
 module.exports = {
     plugins: [
         ['@vuepress/medium-zoom', {
-            selector: '.portfolio-item-layout .content img'
+            selector: '.portfolio-item-layout .content img,.medium-zoom'
         }],
         ['vuepress-plugin-container', {
             type: 'tip',

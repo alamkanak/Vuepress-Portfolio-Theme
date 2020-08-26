@@ -5,7 +5,7 @@
         <header>
             <h1>Header</h1>
         </header> -->
-        <footer class="text-center my-5">
+        <footer class="text-center my-5 container">
             <ul v-if="typeof $site.themeConfig.social !== 'undefined'" class="mb-4 social">
                 <li v-for="link in $site.themeConfig.social" :key="link.url" class="mx-3">
                     <a :href="link.url" target="_blank">

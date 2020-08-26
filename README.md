@@ -17,11 +17,6 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
     ```
     npm run docs:dev
     ```
-5. To deploy the project to github, open `deploy.sh` and update it with your repo url and your local machine username.
-6. To deploy, run
-    ```
-    sudo sh deploy.sh
-    ```
 
 ## Configure the site
 1. Open `docs/.viewpress/config.js`.
@@ -35,3 +30,12 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 ## Advanced: Customize theme color and font
 1. Open `docs/.viewpress/theme/style/index.styl` file.
 2. At the top of the file, you can see all of the color options that you can modify. Edit them according to your need.
+
+## Deployment to github pages
+1. Open `deploy.sh`.
+2. Replace all references of `https://github.com/alamkanak/alamkanak.github.io.git` with your repo URL where you want to deploy.
+3. Replace all references of `alam` with your loccal machine user name.
+4. To deploy, run
+    ```
+    sudo sh deploy.sh
+    ```
