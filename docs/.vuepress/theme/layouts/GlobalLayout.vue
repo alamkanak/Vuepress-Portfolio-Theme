@@ -13,7 +13,7 @@
                     </a>
                 </li>
             </ul>
-            <p>This website was made on ViewPress with ❤️ by Raquib-ul Alam. Love the site? <a href="https://github.com/alamkanak/Viewpress-Portfolio-Theme">Fork it on Github.</a></p>
+            <p>This website was made on ViewPress with ❤️ by Raquib-ul Alam. Love the site? <a href="https://github.com/alamkanak/Viewpress-Portfolio-Theme" target="_blank">Fork it on Github.</a></p>
         </footer>
     </div>
 </template>

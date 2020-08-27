@@ -2,7 +2,7 @@
 title: Android Week View
 lang: en-US
 tags: ['Android Engineering', 'UX Design']
-thumbnail: ./series-addict-thumb.png
+thumbnail: ./android-week-view-thumb.png
 description: An android library to render calendars (week view or day view).
 links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
 skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
