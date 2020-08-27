@@ -49,7 +49,7 @@
                         <h1 class="mb-4 text-center">Noteworthy Projects</h1>
                         <div class="text-center pt-3 mb-2">
                             <b-button-group label="" class="mb-4 flex-wrap">
-                                <b-button variant="outline-secondary" v-for="tag in tags" :key="tag.value" v-bind:class="{active: selectedTag == tag.value}" @click="selectedTag = tag.value" class="mb-3">{{ tag.text }}</b-button>
+                                <b-button variant="success" v-for="tag in tags" :key="tag.value" v-bind:class="{active: selectedTag == tag.value}" @click="selectedTag = tag.value" class="mb-3 btn-theme">{{ tag.text }}</b-button>
                             </b-button-group>
                         </div>
 
@@ -107,6 +107,8 @@ export default {
                 });
             tags = _.uniq(tags).map((item) => {
                 return { text: item, value: _.snakeCase(item) };
+            }).sort(function (a,b) {
+                return (a.text < b.text) ? -1 : (a.text > b.text) ? 1 : 0;
             });
             tags.unshift({ text: "All", value: "*" });
             this.selectedTag = tags[1]["value"];
