@@ -23,6 +23,25 @@
                 </b-col>
             </b-row>
         </b-container>
+        <div v-if="typeof $page.frontmatter.skills !== 'undefined'" class="pb-4 skills">
+            <div class="separator mb-5"></div>
+            <h1 class="text-center mb-4">Skills Summary</h1>
+            <div class="container">
+                <div class="row justify-content-center pt-2">
+                    <div class="col-12 col-lg-4" v-for="skill in $page.frontmatter.skills" :key="skill.title">
+                        <div class="rounded-lg bg-light pt-4 pb-2 px-4 mb-4">
+                            <h4 class="mb-4 font-weight-bold mt-1">{{ skill.title }}</h4>
+                            <ul>
+                                <li v-for="att in skill.skills" class="mb-4">
+                                    <div class="font-weight-bold mb-1">{{ att[0] }}</div>
+                                    <div class="text-muted">{{ att[1] }}</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="bg-light">
             <b-container>
                 <b-row>
