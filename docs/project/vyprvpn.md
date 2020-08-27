@@ -4,7 +4,10 @@ lang: en-US
 tags: ['Android Engineering']
 thumbnail: ./vyprvpn-thumb.png
 description: An android library to render calendars (week view or day view).
-links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
+links: [
+    {url: 'https://play.google.com/store/apps/details?id=com.goldenfrog.vyprvpn.app', text: 'View on Github', icon: ['fab', 'github']}, 
+    {url: 'https://www.vyprvpn.com/', text: 'View homepage', icon: ['fas', 'home']}
+]
 skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
 tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']
 ---

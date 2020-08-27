@@ -5,7 +5,7 @@ gray-color-600 = #e1e2e2
 gray-color-500 = #f3f5f7
 gray-color-400 = #cecece
 
-@import url('https://fonts.googleapis.com/css?family=Open%20Sans');
+@import url('https://fonts.googleapis.com/css?family=Open%20Sans:300,400,600,700,800');
 
 html, body, .badge-light
     font-family 'Open Sans'
@@ -142,11 +142,15 @@ a:hover
             opacity 0.7
     
     .skills
+        h4
+            font-weight: 400
         ul
             padding: 0
         
         li
             list-style: none
+            .title
+                font-weight: 600
         
         .rounded-lg
             border-radius: .8rem !important;

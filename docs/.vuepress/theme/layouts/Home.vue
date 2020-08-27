@@ -30,10 +30,10 @@
                 <div class="row justify-content-center pt-2">
                     <div class="col-12 col-lg-4" v-for="skill in $page.frontmatter.skills" :key="skill.title">
                         <div class="rounded-lg bg-light pt-4 pb-2 px-4 mb-4">
-                            <h4 class="mb-4 font-weight-bold mt-1">{{ skill.title }}</h4>
+                            <h4 class="mb-4 mt-1">{{ skill.title }}</h4>
                             <ul>
                                 <li v-for="att in skill.skills" class="mb-4">
-                                    <div class="font-weight-bold mb-1">{{ att[0] }}</div>
+                                    <div class="title mb-1">{{ att[0] }}</div>
                                     <div class="text-muted">{{ att[1] }}</div>
                                 </li>
                             </ul>
