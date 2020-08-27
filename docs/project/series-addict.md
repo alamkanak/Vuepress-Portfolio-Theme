@@ -1,12 +1,13 @@
 ---
 title: Series Addict
 lang: en-US
-tags: ['Android Engineering', 'UX Design']
+tags: ['Android Development', 'UX Design']
 thumbnail: ./series-addict-thumb.png
 description: An app to track your favorite TV shows.
 links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict', text: 'Get it from Google Play', icon: ['fab', 'google-play']}, {url: 'https://alamkanak.github.io/Series-Addict-App-Page/', text: 'View Homepage', icon: ['fas', 'home']}]
 skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Deployment Management']
 tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor']
+date: 2020-10-01
 ---
 ![An image](/series-addict.png)
 

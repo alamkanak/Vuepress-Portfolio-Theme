@@ -1,7 +1,7 @@
 ---
 title: VyprVPN
 lang: en-US
-tags: ['Android Engineering']
+tags: ['Android Development']
 thumbnail: ./vyprvpn-thumb.png
 description: An android library to render calendars (week view or day view).
 links: [
@@ -10,6 +10,7 @@ links: [
 ]
 skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
 tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']
+date: 2019-12-01
 ---
 ![An image](/vyprvpn.png)
 

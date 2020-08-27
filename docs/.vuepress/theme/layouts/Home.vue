@@ -54,7 +54,7 @@
                         <transition-group class="projects" name="projects">
                             <a class="project" v-if="shouldShowProject(project)" :href="project.path" v-for="project in projects" :key="project.path">
                                 <img :src="project.frontmatter.thumbnail" alt="">
-                                <p class="lead px-3 pt-3 mb-1 font-weight-normal">{{project.title}}</p>
+                                <p class="lead px-3 pt-3 mb-1 font-weight-normal text-center">{{project.title}}</p>
                                 <p class="px-3 text-muted mb-2 clamp-2 text-center desc">{{ project.frontmatter.description }}</p>
                                 <div class="mx-3 mb-3 clamp-1 text-center">
                                     <b-badge variant="light bg-light font-weight-normal" class="mr-1" v-for="tag in project.frontmatter.tags" :key="tag">{{ tag }}</b-badge>
@@ -91,7 +91,9 @@ export default {
         projects() {
             return this.$site.pages.filter((page) => {
                 return page.path.indexOf("/project/") >= 0;
-            });
+            }).sort(function (a,b) {
+                return (a.frontmatter.date < b.frontmatter.date) ? -1 : (a.frontmatter.date > b.frontmatter.date) ? 1 : 0;
+            }).reverse();
         },
         tags() {
             var tags = this.projects
