@@ -47,9 +47,11 @@
                 <b-row>
                     <b-col class="my-5">
                         <h1 class="mb-4 text-center">Noteworthy Projects</h1>
-                        <b-form-group label="" class="text-center mb-5">
-                            <b-form-radio-group id="btn-radios-1" button-variant="outline-secondary" v-model="selectedTag" :options="tags" buttons name="radios-btn-default"></b-form-radio-group>
-                        </b-form-group>
+                        <div class="text-center pt-3 mb-2">
+                            <b-button-group label="" class="mb-4 flex-wrap">
+                                <b-button variant="outline-secondary" v-for="tag in tags" :key="tag.value" v-bind:class="{active: selectedTag == tag.value}" @click="selectedTag = tag.value" class="mb-3">{{ tag.text }}</b-button>
+                            </b-button-group>
+                        </div>
 
                         <transition-group class="projects" name="projects">
                             <a class="project" v-if="shouldShowProject(project)" :href="project.path" v-for="project in projects" :key="project.path">
@@ -107,7 +109,7 @@ export default {
                 return { text: item, value: _.snakeCase(item) };
             });
             tags.unshift({ text: "All", value: "*" });
-            this.selected = tags[0]["value"];
+            this.selectedTag = tags[1]["value"];
             return tags;
         },
     },
