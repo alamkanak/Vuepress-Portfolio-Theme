@@ -6,6 +6,7 @@ module.exports = {
     themeConfig: {
         social: [
             { name: 'Github', icon: ['fab', 'github'], url: 'https://github.com/alamkanak' },
+            { name: 'Stack Overflow', icon: ['fab', 'stack-overflow'], url: 'https://stackoverflow.com/users/1113765/raquib-ul-alam'},
             { name: 'Mail', icon: ['fas', 'envelope'], url: 'mailto:alam.kanak@gmail.com' },
             { name: 'LinkedIn', icon: ['fab', 'linkedin'], url: 'https://www.linkedin.com/in/alamkanak/' },
             { name: 'Dribbble', icon: ['fab', 'dribbble'], url: 'https://dribbble.com/kanak'}
