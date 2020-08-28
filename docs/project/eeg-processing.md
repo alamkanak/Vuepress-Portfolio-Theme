@@ -1,5 +1,5 @@
 ---
-title: EEG Signal Processing
+title: EEG Signal Processing - UNDER REVIEW
 lang: en-US
 tags: ['Machine Learning']
 thumbnail: ./eeg-thumb.png

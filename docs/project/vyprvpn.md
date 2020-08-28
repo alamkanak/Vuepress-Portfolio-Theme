@@ -20,3 +20,5 @@ VyprVPN is the app I worked on during my employement at Golden Frog GmbH. I was 
 - Use both Android NDK and Android SDK for implementing features.
 - Utilize Jira, Confluence, Bitbucket, Bamboo etc. to work in an agile environment. 
 - Collaborate with other teams like DevOps, iOS, Mac, Windows etc.
+
+::: youtube https://www.youtube.com/embed/Qm0lm7Cwj08

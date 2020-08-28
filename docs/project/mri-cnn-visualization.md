@@ -1,5 +1,5 @@
 ---
-title: Visualization of MRI CNN Models
+title: Visualization of MRI CNN Models - UNDER REVIEW
 lang: en-US
 tags: ['Machine Learning']
 thumbnail: ./mri-thumb.png
