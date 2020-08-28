@@ -4,12 +4,11 @@ lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./finance-bd-thumb.png
 description: An app to track your favorite TV shows.
-links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict', text: 'Get it on Google Play', icon: ['fab', 'google-play']}, {url: 'https://alamkanak.github.io/Series-Addict-App-Page/', text: 'Visit Homepage', icon: ['fas', 'home']}]
-skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Deployment Management']
-tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor']
+links: [{url: 'https://hifipublic.com/2015/04/19/the-best-the-brightest-app-developers-of-bangladesh-honored/', text: 'View featured article', icon: ['fas', 'newspaper']}]
+info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
 date: 2018-01-01
 ---
-![An image](/series-addict.png)
+![An image](/finance-bd.png)
 
 ::: tip HIGHLIGHTS
 - Series Addict has over 100000 installs.

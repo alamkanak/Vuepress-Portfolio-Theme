@@ -8,6 +8,7 @@ module.exports = {
             { name: 'Github', icon: ['fab', 'github'], url: 'https://github.com/alamkanak' },
             { name: 'Mail', icon: ['fas', 'envelope'], url: 'mailto:alam.kanak@gmail.com' },
             { name: 'LinkedIn', icon: ['fab', 'linkedin'], url: 'https://www.linkedin.com/in/alamkanak/' },
+            { name: 'Dribbble', icon: ['fab', 'dribbble'], url: 'https://dribbble.com/kanak'}
         ]
     },
     head: [

@@ -1,12 +1,11 @@
 ---
-title: 	ForexAchievers Signals
+title: 	ForexAchievers Signals App
 lang: en-US
-tags: ['Android Development', 'Web Development', 'UX Design']
+tags: ['Android Development', 'UX Design']
 thumbnail: ./forex-thumb.png
 description: An android library to render calendars (week view or day view).
 links: [{url: 'https://play.google.com/store/apps/details?id=com.forexachievers.signals', text: 'Get it on Google Play', icon: ['fab', 'google-play']}]
-skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
-tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']
+info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
 date: 2018-05-01
 ---
 ![An image](/forex.png)

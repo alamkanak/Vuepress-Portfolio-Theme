@@ -5,12 +5,10 @@ tags: ['Android Development']
 thumbnail: ./android-empty-thumb.png
 description: An android library to render calendars (week view or day view).
 links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
-skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']
-tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}]
+info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech Used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
 date: 2017-01-01
 ---
-![An image](/android-week-view.png)
+![An image](/android-empty.png)
 
 ::: tip HIGHLIGHTS
 - The library is widely popular among Android developers around the world.

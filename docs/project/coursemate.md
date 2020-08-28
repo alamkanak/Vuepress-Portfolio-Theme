@@ -4,12 +4,11 @@ lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./coursemate-thumb.png
 description: An app to track your favorite TV shows.
-links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict', text: 'Get it on Google Play', icon: ['fab', 'google-play']}, {url: 'https://alamkanak.github.io/Series-Addict-App-Page/', text: 'Visit Homepage', icon: ['fas', 'home']}]
-skills: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Deployment Management']
-tech: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor']
+links: [{url: 'https://www.thedailystar.net/news/buet-team-wins-eatl-app-contest', text: 'View featured article', icon: ['fas', 'newspaper']}, {url: 'https://www.eatlbd.com/index.php?r=site/contest2013', text: 'Visit competition results', icon: ['fas', 'trophy']}, {url: 'http://eatlapps.com/appsearch/details/108', text: 'Download APK', icon: ['fas', 'rocket']}]
+info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
 date: 2013-10-01
 ---
-![An image](/series-addict.png)
+![An image](/coursemate.png)
 
 ::: tip HIGHLIGHTS
 - Series Addict has over 100000 installs.
