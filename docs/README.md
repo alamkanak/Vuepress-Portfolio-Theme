@@ -19,6 +19,8 @@ skills: [{title: 'Android Development', skills: [
     ]}]
 ---
 
-Labore dolor incididunt occaecat qui fugiat commodo. Consectetur duis aute ea elit ullamco nostrud commodo officia. Occaecat duis ut sunt amet quis excepteur dolor. Aute officia anim elit esse est ut ipsum enim. Nisi consequat ad ullamco officia eu occaecat laboris elit sint deserunt excepteur consequat.
+Professionally, I work as a Senior Android Engineer. My Android experiences span over eight years.
+
+Academically, my research focusses on medical image and signal processing towards the development of machine learning and statistical models. 
 
 <br/>

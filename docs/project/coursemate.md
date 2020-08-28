@@ -12,7 +12,7 @@ date: 2013-10-01
 
 ::: tip HIGHLIGHTS
 - Course Mate won the national championship award in 2013.
-- The app was bought by a Bangladeshi app market company (EATL)[http://eatlapps.com].
+- The app was bought by a Bangladeshi app market company [EATL](http://eatlapps.com).
 :::
 
 CourseMate aims at providing a rich experience for the students of Bangladeshi universities. It was developed as a platform for connectivity between students, teachers and institution. The app was developed for the nation-wide competition "EATL App Contest" in Bangladesh. It was awarded the first prize in the same competition and later bought by the company EATL.
