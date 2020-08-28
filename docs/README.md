@@ -12,10 +12,10 @@ skills: [{title: 'Android Development', skills: [
         ['Continuous integration', 'Worked with many CI, CD tools such as teamcity, bamboo, and bitbucket pipelines']
     ]}, {title: 'Machine Learning', skills: [
         ['Classical machine learning', 'Accustomed to using various classical machine learning algorithms in different projects'],
+        ['Computer vision', 'In several of my projects, I employed OpenCV and traditional computer vision techniques in medical images'],
         ['Tensorflow', 'Have used tensorflow extensively in several research projects'],
         ['Data processing', 'Have numerous publications in the field of medical signal and image processing'],
-        ['Data visualization', 'Strive to produce meaningful and digestable visualization of big data'],
-        ['Deep learning visualization', 'Used localized gradient algorithm to produce visual explanation of deep learning model decisions']
+        ['Data visualization', 'Strive to produce meaningful and digestable visualization of big data']
     ]}]
 ---
 

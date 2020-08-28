@@ -3,14 +3,14 @@ title: Easy Greeting Maker
 lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./easy-greeting-thumb.png
-description: An app to track your favorite TV shows.
+description: An Android app that allows creating custom greeting cards.
 links: [{url: 'https://apkpure.com/easy-greeting-maker/com.mobiobject.easygreetingmaker.app', text: 'Get it on third party app store', icon: ['fas', 'store']}]
 info: [{key: 'Status', value: 'Discontinued'}, {key: 'Role', value: 'Freelance Software Engineer'}, {key: 'Employment', value: 'Mobi Object, India'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'API Development']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Laravel']}]
 date: 2017-01-01
 ---
 ![An image](/easy-greeting.png)
 
-This application helps user to create or edit beautiful greeting cards with many clip arts and beautiful backgrounds. User can select the text message from predefined messages or type their own message. User can type his own message on card or select from list of predefined messages. With this amazing app you can do following things:
+Easy Greeting Maker is an Android app that allows creating greeting cards in a custom view that supports editing images and texts. This application helps user to create or edit beautiful greeting cards with many clip arts and beautiful backgrounds. User can select the text message from predefined messages or type their own message. User can type his own message on card or select from list of predefined messages. With this amazing app you can do following things:
 
 ### Features
 The notable app features are:
