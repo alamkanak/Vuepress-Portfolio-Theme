@@ -3,24 +3,18 @@ title: Lifeline
 lang: en-US
 tags: ['Android Development', 'Web Development']
 thumbnail: ./lifeline-thumb.png
-description: An app to track your favorite TV shows.
+description: An app and website to connect blood donors with the ones that are in need.
 links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict', text: 'Get it on Google Play', icon: ['fab', 'google-play']}, {url: 'https://alamkanak.github.io/Series-Addict-App-Page/', text: 'Visit Homepage', icon: ['fas', 'home']}]
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+info: [{key: 'Status', value: 'Discontinued'}, {key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Singularity Ltd, Bangladesh'}, {key: 'Skills involved', value: ['Android SDK', 'UX Design', 'Web Development', 'API Development']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'PHP', 'Laravel', 'Google Maps API', 'Google Places API']}]
 date: 2016-01-01
 ---
-![An image](/lifeline.png)
-
-::: tip HIGHLIGHTS
-- Series Addict has over 100000 installs.
-- The app has in app subscriptions, used by hundreds of users around the world.
+::: youtube https://www.youtube.com/embed/gfj5ZsERJlk
 :::
-
-Series Addict keeps you up to date about new and upcoming episodes. Mark the episodes as watched when you watch them, get notified when episodes air, view TV schedules of your favorite shows, add home screen widgets to remain up to date about new episodes all the time and do a lot more with Series Addict. Never miss a show from now on.
+<br/>
+Lifeline consists of an Android app and a website that aims to connect blode donors with the people who are in urgent need of blood. The app provided service only in Bangladesh.
 
 ### Features
-The notable app features are:
-- Mark episodes as watched
-- View TV schedules of your favorite shows in calendar
-- Share what you're watching with your friends
-- Add widgets to your home screen
-- Get notified when new episodes air
+- Request for blood with specific bloodtype
+- See the list of donors closest to you
+- Contact your donor
+- Navigate to your donor

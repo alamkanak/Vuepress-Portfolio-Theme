@@ -1,28 +1,13 @@
 ---
 title: Android Libraries and Resources
 lang: en-US
-tags: ['Web Development']
+tags: ['Web Development', 'UX Design']
 thumbnail: ./android-libs-thumb.png
 description: An android library to render calendars (week view or day view).
-links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+links: [{url: 'https://github.com/alamkanak/android-libraries-and-resources', text: 'View on Github', icon: ['fab', 'github']}, {url: 'https://alamkanak.github.io/android-libraries-and-resources', text: 'Visit the site', icon: ['fas', 'home']}]
+info: [{key: 'Role', value: 'Web developer'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Web development', 'UX Design']}, {key: 'Tech used', value: ['Javascript']}]
 date: 2017-01-01
 ---
-![An image](/android-week-view.png)
+![An image](/android-libs.png)
 
-::: tip HIGHLIGHTS
-- The library is widely popular among Android developers around the world.
-- It has over 3200 stars on Github.
-- The library inspired developers of other platforms to replicate it in their platform.
-- The library has a very active community creating and discussing issues in Github.
-:::
-
-
-Android Week View is an android library to display calendars (week view or day view) within the app. It supports custom styling. The library was developed in Java and it basically is a custom view with logic to render calendar with specified events. Robust computation of event positioning and overlapping is performed under the hood. The library also inspired others to replicate it in other frameworks such as Flutter, iOS etc.
-### Features
-- Week view calendar
-- Day view calendar
-- Custom styling
-- Horizontal and vertical scrolling
-- Infinite horizontal scrolling
-- Live preview of custom styling in xml preview window
+**Android libraries and resources** is a website developed for Android developers. The website is hosted on Github and in it, developers can easily find Android libraries they are looking for. The site supports searching by title, tags, authors or keywords.

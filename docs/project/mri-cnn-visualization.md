@@ -2,27 +2,11 @@
 title: Visualization of MRI CNN Models
 lang: en-US
 tags: ['Machine Learning']
-thumbnail: ./coursemate-thumb.png
-description: An android library to render calendars (week view or day view).
-links: [{url: 'https://github.com/alamkanak/Android-Week-View', text: 'View on Github', icon: ['fab', 'github']}]
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+thumbnail: ./mri-thumb.png
+description: A pipeline to process, classify and explain CNN models for MRI.
+info: [{key: 'Role', value: 'Lear researcher'}, {key: 'Affiliation', value: 'University of Sydney'}, {key: 'Skills involved', value: ['Machine Learning', 'Medical Image Processing', 'Computer Vision']}, {key: 'Tech used', value: ['Python', 'OpenCV', 'Tensorflow']}]
 date: 2020-10-01
 ---
-![An image](/sensex.png)
-
-::: tip HIGHLIGHTS
-- The library is widely popular among Android developers around the world.
-- It has over 3200 stars on Github.
-- The library inspired developers of other platforms to replicate it in their platform.
-- The library has a very active community creating and discussing issues in Github.
-:::
 
 
-Android Week View is an android library to display calendars (week view or day view) within the app. It supports custom styling. The library was developed in Java and it basically is a custom view with logic to render calendar with specified events. Robust computation of event positioning and overlapping is performed under the hood. The library also inspired others to replicate it in other frameworks such as Flutter, iOS etc.
-### Features
-- Week view calendar
-- Day view calendar
-- Custom styling
-- Horizontal and vertical scrolling
-- Infinite horizontal scrolling
-- Live preview of custom styling in xml preview window
+As a part of my postgraduate Masters thesis, I developed pipelines to process and classify MRI images. The pipeline can also produce visual explanations of the generated model. A scientific paper is coming along soon.

@@ -3,27 +3,10 @@ title: 	ForexAchievers Signals Web
 lang: en-US
 tags: ['Web Development']
 thumbnail: ./forex-web-thumb.png
-description: An android library to render calendars (week view or day view).
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+description: A website to manage forex signals and users.
+info: [{key: 'Role', value: 'Freelance Web Developer'}, {key: 'Employment', value: 'ForexAchievers, Singapore'}, {key: 'Skills involved', value: ['Web Development']}, {key: 'Tech used', value: ['Laravel', 'Google Billing API', 'iOS Billing API']}]
 date: 2018-04-01
 ---
 ![An image](/forex-web.png)
 
-Android Week View is an android library to display calendars (week view or day view) within the app. It supports custom styling. The library was developed in Java and it basically is a custom view with logic to render calendar with specified events. Robust computation of event positioning and overlapping is performed under the hood. The library also inspired others to replicate it in other frameworks such as Flutter, iOS etc.
-
-### Features
-- Week view calendar
-- Day view calendar
-- Custom styling
-- Horizontal and vertical scrolling
-- Infinite horizontal scrolling
-- Live preview of custom styling in xml preview window
-
-
-::: tip HIGHLIGHTS
-- Series Addict has over 100000 installs.
-- The app has in app subscriptions, used by hundreds of users around the world.
-:::
-
-
-::: youtube https://www.youtube.com/embed/6rrSnwwt6kY
+ForexAchievers Signals Web is an web admin panel developed to manage data and users for [ForexAchievers Signals Android app](/project/forex.html) and [ForexAcheivers Singals iOS app](https://apps.apple.com/us/app/forexachievers-signals/id1312396005). In the website, you can manage forex signals, analysis, users, subscriptions, notifications.

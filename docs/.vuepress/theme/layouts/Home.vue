@@ -98,6 +98,7 @@ export default {
             }).reverse();
         },
         tags() {
+            var sortorder = this.$site.themeConfig.tag_order
             var tags = this.projects
                 .map((item) => {
                     return item.frontmatter.tags;
@@ -108,6 +109,9 @@ export default {
             tags = _.uniq(tags).map((item) => {
                 return { text: item, value: _.snakeCase(item) };
             }).sort(function (a,b) {
+                if (typeof sortorder !== 'undefined') {
+                    return sortorder.indexOf(a.text) - sortorder.indexOf(b.text);
+                }
                 return (a.text < b.text) ? -1 : (a.text > b.text) ? 1 : 0;
             });
             tags.unshift({ text: "All", value: "*" });
@@ -130,6 +134,11 @@ export default {
             }
             return false;
         },
+        arraymove(arr, fromIndex, toIndex) {
+            var element = arr[fromIndex];
+            arr.splice(fromIndex, 1);
+            arr.splice(toIndex, 0, element);
+        }
     },
 };
 </script>

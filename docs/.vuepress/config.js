@@ -9,7 +9,8 @@ module.exports = {
             { name: 'Mail', icon: ['fas', 'envelope'], url: 'mailto:alam.kanak@gmail.com' },
             { name: 'LinkedIn', icon: ['fab', 'linkedin'], url: 'https://www.linkedin.com/in/alamkanak/' },
             { name: 'Dribbble', icon: ['fab', 'dribbble'], url: 'https://dribbble.com/kanak'}
-        ]
+        ],
+        tag_order: ['Android Development', 'Machine Learning', 'Web Development', 'UX Design', 'Drawing']
     },
     head: [
         ['link', { rel: 'icon', type: "image/png", sizes: "32x32", href: '/favicon-32x32.png' }],

@@ -4,23 +4,38 @@ lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./easy-greeting-thumb.png
 description: An app to track your favorite TV shows.
-links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict', text: 'Get it on Google Play', icon: ['fab', 'google-play']}, {url: 'https://alamkanak.github.io/Series-Addict-App-Page/', text: 'Visit Homepage', icon: ['fas', 'home']}]
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+links: [{url: 'https://apkpure.com/easy-greeting-maker/com.mobiobject.easygreetingmaker.app', text: 'Get it on third party app store', icon: ['fas', 'store']}]
+info: [{key: 'Status', value: 'Discontinued'}, {key: 'Role', value: 'Freelance Software Engineer'}, {key: 'Employment', value: 'Mobi Object, India'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'API Development']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Laravel']}]
 date: 2017-01-01
 ---
 ![An image](/easy-greeting.png)
 
-::: tip HIGHLIGHTS
-- Series Addict has over 100000 installs.
-- The app has in app subscriptions, used by hundreds of users around the world.
-:::
-
-Series Addict keeps you up to date about new and upcoming episodes. Mark the episodes as watched when you watch them, get notified when episodes air, view TV schedules of your favorite shows, add home screen widgets to remain up to date about new episodes all the time and do a lot more with Series Addict. Never miss a show from now on.
+This application helps user to create or edit beautiful greeting cards with many clip arts and beautiful backgrounds. User can select the text message from predefined messages or type their own message. User can type his own message on card or select from list of predefined messages. With this amazing app you can do following things:
 
 ### Features
 The notable app features are:
-- Mark episodes as watched
-- View TV schedules of your favorite shows in calendar
-- Share what you're watching with your friends
-- Add widgets to your home screen
-- Get notified when new episodes air
+- Option to set reminder for greeting cards.
+- Option to save your favorite cards.
+- Option to create greetings for lot of occasions.
+- Option to set multiple font and its sizes.
+- Option to re size or re arrange images and text positions.
+
+This Application provide different themes such as
+
+- Anniversary
+- Birthday
+- Christmas
+- Congratulations
+- Easter
+- Get well soon
+- Love
+- Miss You
+- New year
+- Thank you
+- Valentine
+
+<br/>
+
+::: youtube https://www.youtube.com/embed/0RqZXI2B1gI
+:::
+<br/>

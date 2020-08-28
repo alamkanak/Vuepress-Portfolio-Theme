@@ -3,24 +3,28 @@ title: Finance BD
 lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./finance-bd-thumb.png
-description: An app to track your favorite TV shows.
+description: An app to track your your stock market portfolio.
 links: [{url: 'https://hifipublic.com/2015/04/19/the-best-the-brightest-app-developers-of-bangladesh-honored/', text: 'View featured article', icon: ['fas', 'newspaper']}]
-info: [{key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Performance Monitor', 'Maven']}]
+info: [{key: 'Status', value: 'Discontinued'}, {key: 'Role', value: 'Founder and Software Engineer'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'API Development']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio', 'Maven', 'PHP', 'Laravel']}]
 date: 2018-01-01
 ---
 ![An image](/finance-bd.png)
 
 ::: tip HIGHLIGHTS
-- Series Addict has over 100000 installs.
-- The app has in app subscriptions, used by hundreds of users around the world.
+- Finance BD won the National Mobile Application App Award in Bangladesh
+- The app was one of the most popular finance app in Bangladesh
 :::
 
-Series Addict keeps you up to date about new and upcoming episodes. Mark the episodes as watched when you watch them, get notified when episodes air, view TV schedules of your favorite shows, add home screen widgets to remain up to date about new episodes all the time and do a lot more with Series Addict. Never miss a show from now on.
+Beat the stock market with Finance BD for Dhaka Stock Exchange (DSE), Bangladesh. Follow the stocks that you care about. See real-time profits and losses of the shares you own. The app is designed beautifully with nice looking graphs, effective navigation and intuitive functionality.
 
-### Features
-The notable app features are:
-- Mark episodes as watched
-- View TV schedules of your favorite shows in calendar
-- Share what you're watching with your friends
-- Add widgets to your home screen
-- Get notified when new episodes air
+### KEY FEATURES
+- See current price of all stocks of the DSE enlisted companies
+- Search and filter companies
+- See current state of DSE: top gainers, top losers, issues declined, issues advanced, issues unchanged etc.
+- Follow companies and add your purchase info to see them quickly in the favorites section
+- Add your share details to let the app automatically calculate profits and losses every time you launch it
+- Share calculator: manually calculate your profits and losses with share calculator
+- Companies: watch detail info of company with price history graphs
+- Customize the app: set the start up screen, broker house commission etc. to personalize the app
+
+All the hassles for reloading the DSE website and calculating your profits over and over again is now over. This app does all the hassles for you. It gives all the information you need with just a push of a button. Enjoy and rate the app.
