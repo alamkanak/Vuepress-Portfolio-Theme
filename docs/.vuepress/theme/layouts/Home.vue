@@ -28,9 +28,13 @@
             <div class="container">
                 <div class="row justify-content-center pt-2">
                     <div class="col-12 col-lg-4" v-for="skill in $page.frontmatter.skills" :key="skill.title">
-                        <div class="rounded-lg bg-light pt-4 pb-2 px-4 mb-4">
-                            <h4 class="mb-4 mt-1">{{ skill.title }}</h4>
-                            <ul>
+                        <div class="rounded-lg bg-light pt-4 pb-2 mb-4">
+                            <div class="px-4">
+                                <h4 class="mt-1">{{ skill.title }}</h4>
+                                <p class="text-muted mb-4">{{skill.experience}}</p>
+                            </div>
+                            <div class="separator mb-4"></div>
+                            <ul class="px-4">
                                 <li v-for="att in skill.skills" class="mb-4">
                                     <div class="title mb-1">{{ att[0] }}</div>
                                     <div class="text-muted">{{ att[1] }}</div>
