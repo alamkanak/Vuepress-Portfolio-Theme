@@ -23,7 +23,7 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 2. Edit title, description, favicons, social links etc.
 3. Refer to [font-awesome](https://fontawesome.com) library if you want to add custom icons in the social links list.
 
-## Adding portfolio items
+## Add portfolio items
 1. In `docs > project` folder add a markdown file for each of your project.
 2. You can customize the metadata in the top of the file to customize portfolio item page. Have a look at the sample portfolio items in the repo.
 
@@ -31,7 +31,7 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 1. Open `docs/.viewpress/theme/style/index.styl` file.
 2. At the top of the file, you can see all of the color options that you can modify. Edit them according to your need.
 
-## Deployment to github pages
+## Deploy to github pages
 1. Open `deploy.sh`.
 2. Replace all references of `https://github.com/alamkanak/alamkanak.github.io.git` with your repo URL where you want to deploy.
 3. Replace all references of `alam` with your loccal machine user name.
