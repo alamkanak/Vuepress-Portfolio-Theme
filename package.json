@@ -29,6 +29,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

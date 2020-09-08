@@ -29,6 +29,11 @@ module.exports = {
             {
                 'ga': process.env.GOOGLE_ANALYTICS_TRACKING_ID
             }
+        ],
+        [
+            'sitemap', {
+                hostname: 'https://alamkanak.github.io'
+            }
         ]
     ]
 }
