@@ -4,7 +4,7 @@
             <b-row>
                 <b-col class="text-center my-5">
                     <img :src="$page.frontmatter.avatar" alt="avatar" class="avatar mb-5 mt-4 medium-zoom">
-                    <h2 class="mb-4 display-4">Hi! I'm {{ $page.frontmatter.title}}</h2>
+                    <h2 class="mb-4 display-4">Hi! I'm {{ $site.title }}</h2>
                     <div class="lead">
                         <Content />
                     </div>
