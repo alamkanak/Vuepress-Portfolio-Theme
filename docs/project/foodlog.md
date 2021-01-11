@@ -4,7 +4,7 @@ lang: en-US
 tags: ['Android Development', 'UX Design']
 thumbnail: ./foodlog-thumb.png
 description: An app for IBS patients.
-links: [{url: 'https://play.google.com/store/apps/details?id=com.chaosplay.foodlogger', text: 'Get it on Google Play', icon: ['fab', 'google-play']}]
+links: [{url: 'https://apkpure.com/simpler-photo-food-logger/com.chaosplay.foodlogger', text: 'Get it on th', icon: ['fab', 'google-play']}]
 info: [{key: 'Role', value: 'Freelance Software Engineer'}, {key: 'Employment', value: 'Amer Khalid, India'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Android Studio']}]
 date: 2018-02-01
 ---
