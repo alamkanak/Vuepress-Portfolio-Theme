@@ -8,7 +8,7 @@ links: [{url: 'https://www.thedailystar.net/news/buet-team-wins-eatl-app-contest
 info: [{key: 'Status', value: 'Discontinued'}, {key: 'Role', value: 'Software Engineer and Architect'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry']}, {key: 'Tech used', value: ['Java', 'Android SDK', 'Eclipse', 'Performance Monitor', 'Maven']}]
 date: 2013-10-01
 ---
-![An image](/coursemate.png)
+![Course Mate](/coursemate.png)
 
 ::: tip HIGHLIGHTS
 - Course Mate won the national championship award in 2013.
@@ -26,3 +26,5 @@ The notable app features are:
 - Keep track of progress per semester/courses
 - View schedule & data in intuitive UI to help plan ahead
 - Share schedule/course data
+
+![Course Mate](/coursemate-2.jpeg)
