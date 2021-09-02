@@ -8,7 +8,7 @@ links: [{url: 'https://play.google.com/store/apps/details?id=com.alamkanak.serie
 info: [{key: 'Role', value: 'Founder and Software Engineer'}, {key: 'Employment', value: 'Self employed'}, {key: 'Skills involved', value: ['Android SDK', 'Custom View Development', 'Performance Analysis', 'UX Design', 'Calculus', 'Geometry', 'Subscription Billing']}, {key: 'Tech used', value: ['Kotlin', 'Android SDK', 'Android Studio', 'RxJava', 'Performance Monitor', 'Maven', 'Google In App Billing']}]
 date: 2020-10-01
 ---
-![An image](/series-addict.png)
+![Series Addictt](/series-addict.png)
 
 ::: tip HIGHLIGHTS
 - Series Addict has over 100,000 installs.
