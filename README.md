@@ -34,7 +34,7 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 ## Deploy to github pages
 1. Open `deploy.sh`.
 2. Replace all references of `https://github.com/alamkanak/alamkanak.github.io.git` with your repo URL where you want to deploy.
-3. Replace all references of `alam` with your loccal machine user name.
+3. Replace all references of `alam` with your local machine user name.
 4. To deploy, run
     ```
     sudo sh deploy.sh
