@@ -1,0 +1,14 @@
+version: '3'
+services:
+  portfolio:
+    build:
+      context: .
+    restart: 'no'
+    volumes:
+      - .:/usr/src/app/
+      - /usr/src/app/node_modules
+    ports:
+      - "8080:8080"
+    command: ["sh", "-c", "npm run docs:dev"]
+    env_file:
+      - .env

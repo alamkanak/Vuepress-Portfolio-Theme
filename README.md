@@ -6,17 +6,24 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 ## Setup
 1. Clone the repo.
 2. Open terminal in the root directory and run
-    ```
+    ```bash
     npm install
     ```
-3. Create `.env` file at the root directory and add Google Analytics tracking ID
+3. Copy the `.env.example` file at the root directory and change all the environment variables
+    ```bash
+    cp .env.example .env
+    nano .env
     ```
-    GOOGLE_ANALYTICS_TRACKING_ID=<YOUR TRACKING ID>
-    ```
-4. To run the project on development environment, run
-    ```
-    npm run docs:dev
-    ```
+4. To run the project you can use one of the following options:
+    1. Run the project in docker
+        ```bash
+        docker-compose up
+        ```
+    2. Run the project locally
+        ```bash
+        npm run docs:dev
+        ```
+5. Your project will be available in https://localhost:8080
 
 ## Configure the site
 1. Open `docs/.viewpress/config.js`.
@@ -35,7 +42,16 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 1. Open `deploy.sh`.
 2. Replace all references of `https://github.com/alamkanak/alamkanak.github.io.git` with your repo URL where you want to deploy.
 3. Replace all references of `alam` with your local machine user name.
-4. To deploy, run
-    ```
-    sudo sh deploy.sh
-    ```
+4. To deploy, run one of the following:
+    1. If running npm on your local environment:
+        ```bash
+        sudo sh deploy.sh
+        ```
+    2. If running on docker:
+        ```bash
+        # get container ID
+        docker ps
+
+        # deploy
+        docker exec <container_name> sh deploy.sh
+        ```
