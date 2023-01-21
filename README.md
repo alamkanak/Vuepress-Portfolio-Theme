@@ -29,6 +29,7 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 1. Open `docs/.viewpress/config.js`.
 2. Edit title, description, favicons, social links etc.
 3. Refer to [font-awesome](https://fontawesome.com) library if you want to add custom icons in the social links list.
+4. Open `docs/README.md` and edit home page content.
 
 ## Add portfolio items
 1. In `docs > project` folder add a markdown file for each of your project.
