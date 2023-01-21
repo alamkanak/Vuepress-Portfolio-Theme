@@ -52,6 +52,16 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
         # get container ID
         docker ps
 
+        # go into docker terminal
+        docker exec -it <container_name> sh
+
+        # setup git
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+
         # deploy
-        docker exec <container_name> sh deploy.sh
+        sh deploy.sh
+
+        # exit
+        exit
         ```
