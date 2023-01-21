@@ -40,6 +40,23 @@ This is a viewpress theme, populated with sample portfolio items. The theme curr
 2. At the top of the file, you can see all of the color options that you can modify. Edit them according to your need.
 
 ## Deploy to github pages
+There are 2 ways to deploy
+
+### Option 1: Github actions
+1. Open `.github/workflows/deploy.yml`.
+2. Edit the target repository where your portfolio will be hosted:
+    ```yml
+    destination-github-username: <YOUR TARGET USERNAME>
+    destination-repository-name: <YOUR TARGET REPO NAME>
+    user-name: <YOUR COMMIT USERNAME>
+    target-branch: <YOUR TARGET BRANCH>
+    ```
+3. Open your repo current repo where this current project is hosted.
+4. Go to Settings > Secrets and variables > Actions > New repository secret.
+5. Add your github [personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) in a variable called `PORTFOLIO_REPOSITORY_PERSONAL_ACCESS_TOKEN`.
+6. From now on, When you make a new commit, github should automatically deploy into the target repo.
+
+### Option 2: Manually
 1. Open `deploy.sh`.
 2. Replace all references of `https://github.com/alamkanak/alamkanak.github.io.git` with your repo URL where you want to deploy.
 3. Replace all references of `alam` with your local machine user name.
