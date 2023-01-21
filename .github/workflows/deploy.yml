@@ -1,0 +1,30 @@
+name: Deploy GitHub Pages to external repository
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install --silent
+      - name: Build website
+        run: npm run docs:build
+      - name: Deploy to external repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PORTFOLIO_REPOSITORY_PERSONAL_ACCESS_TOKEN }}
+        with:
+          source-directory: docs/.vuepress/dist/
+          destination-github-username: alamkanak
+          destination-repository-name: alamkanak.github.io
+          user-name: alamkanak
+          target-branch: main
