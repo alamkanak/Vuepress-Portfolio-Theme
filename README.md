@@ -54,7 +54,7 @@ There are 2 ways to deploy
 3. Open your current github repo page where this current project is hosted.
 4. Go to Settings > Secrets and variables > Actions > New repository secret.
 5. Add your github [personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) in a variable called `PORTFOLIO_REPOSITORY_PERSONAL_ACCESS_TOKEN`.
-6. From now on, When you make a new commit, github should automatically deploy into the target repo.
+6. From now on, when you make a new commit, github should automatically deploy into the target repo.
 
 ### Option 2: Manually
 1. Open `deploy.sh`.
